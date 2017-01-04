@@ -4,6 +4,9 @@
 Initial ver : 2016. 10. 17.
 
 Modified for code reuse since 2017.1.4
->- Organize in function modules
->- The collection unit is object-by-object.
+>- [x] Organize in function modules
+>- [x] The collection unit is object-by-object.
+>- [ ] Import URL list from CSV
+>- [ ] Connect DB and Insert values
+>- [ ] Get URL from some range of categories or search result.
 
