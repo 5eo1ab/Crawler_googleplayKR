@@ -61,15 +61,4 @@ def get_secondary_info(soup) :
     contents_soup = soup.find_all('div', attrs={'itemprop':'contentRating'})
     DIC['contents_rating'] = get_value(contents_soup)
     return DIC 
-"""
-def print_info(dic0, dic1) :
-    print("\ntitle:\t", dic0["title"], "\ndeveloper:\t", dic0["developer"],
-      "\ncategory:\t", dic0["category"])
-    for k, v in dic1.items() :
-        print(" ", k, ":\t", v)
-    print("description:\n", dic0["description"])
-    return None
-"""
-
-
 
