@@ -3,11 +3,12 @@
 # 2017.1.4
 ########################
 
+import re
 def get_value(soup_) :
     if len(soup_) == 1 :
         str_ = soup_[0].get_text()
-        # error processing
         str_ = str_.replace("\xa0", " ")
+        #str_ = re.sub(r'[^\x00-\x7F]','', str_) 
         return str_.strip()
     elif len(soup_) > 1 :
         items = []        
